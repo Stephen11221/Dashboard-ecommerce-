@@ -1,0 +1,145 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 250px 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 3fr;
+    grid-template-areas: 
+      "sidebar header header header"
+      "sidebar main main main";
+    height:  100vh;
+
+}
+header{
+    height: 70px;
+    border-bottom: 3px groove gray;
+    grid-area: header;
+    background: rgb(24, 24, 24);
+    padding: 10px 10px;
+}
+form{
+    width: 250px;
+    padding: 10px 5px;
+}
+form input{
+    height: 25px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background: rgb(24, 24, 24);
+}
+.notificatio-icon{
+    float: right;
+    margin-top: -50px;
+}
+
+.notificatio-icon ul li{
+    list-style: none;
+    text-align: right;
+    float: left;
+    padding-left: 6px;
+}
+.sidebar{
+    background: gray;
+    height: 100%;
+    grid-area: sidebar;
+}
+.navigation-menu{
+    margin-top: 50px;
+}
+.navigation-menu  li{
+    list-style: none;
+    padding: 10px 4px;
+}
+.navigation-menu  li a{
+    color: white;
+    
+    text-decoration: none ;
+}
+.dropdown{
+    margin-top: 100px;
+}
+.main-content{
+    background:rgb(24, 24, 24);
+    grid-area: main;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.main-content >.card{
+    padding: 10px 20px;
+    width: 300px;
+    cursor: pointer;
+    color: white;
+    margin-top: 20px;
+    height: 100px;
+    margin-left: 5px;
+}
+.main{
+    display: block;
+}
+.div-lock{
+    margin-top: 10px;
+    border: 1px  groove hotpink;
+}
+.div-lock img{
+    width: 100px;
+    height: 100px;
+    margin-left: 25px;
+}
+@media screen and (max-width: 600px) {
+    .grid-container{
+        display: grid;
+        grid-template-columns: 0.4fr 1fr;
+        grid-area: "sidebar  header"
+        "sidebar main";
+
+    }
+    header{
+        grid-area: header;
+    }
+    .sidebar{
+        grid-area: sidebar;
+    }
+    .sidebar h3{
+    
+        margin-left: 10px;
+        margin-top: 14px;
+        font-size: 15px;
+    }
+    .navigation-menu li a span{
+        font-size: 25px;
+        padding-left: 19px;
+    }
+    .navigation-menu li a.active{
+        background: yellowgreen;
+        text-align
+        : center;
+        padding: 10px 20px;
+    }
+    .navigation-menu  li a span:last-child{
+        display: none;
+    }
+    .main-content{
+        grid-template-columns: repeat(1, 1fr);
+        grid-area: main;
+    }
+    .main-content >.card{
+        width: 200px;
+        height: 130px;
+        margin-left: 50px;
+    }
+    .dropdown{
+        margin-left: -20px;
+    }
+    .div-lock{
+        margin-top: 10px;
+    }
+    .list-group img{
+        height: 50px;
+        width: 70px;
+        margin-left: 25px;
+    }
+
+}
