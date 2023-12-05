@@ -88,7 +88,7 @@ form input{
     height: 100px;
     margin-left: 25px;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
     .grid-container{
         display: grid;
         grid-template-columns: 0.4fr 1fr;
@@ -99,11 +99,13 @@ form input{
     header{
         grid-area: header;
     }
+    header input{
+        width: 100px;
+    }
     .sidebar{
         grid-area: sidebar;
     }
     .sidebar h3{
-    
         margin-left: 10px;
         margin-top: 14px;
         font-size: 15px;
@@ -128,8 +130,13 @@ form input{
     .main-content >.card{
         width: 200px;
         height: 130px;
-        margin-left: 50px;
+        margin-left: 20px;
     }
+    main table{ 
+        font-size: 12px;
+        width: 100px;
+    }
+    
     .dropdown{
         margin-left: -20px;
     }
