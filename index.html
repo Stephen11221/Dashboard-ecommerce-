@@ -61,9 +61,8 @@
                     <a href="report.html">
                         <span><i class="fa fa-area-chart"></i></span>
                         <span>Report</span>
-                    </a>
+                    </a> 
                 </li> 
-    
                     <div class="dropdown">
                         <button class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fa fa-gear p-2 "></i>Setting</button>
                         <ul class="dropdown-menu " >
@@ -94,6 +93,50 @@
                 <span>Customers <i class="fa fa-users float-end fa-2x"></i></span>
                 <h3 class="pt-2">127</h3>
             </div>
+            <div class="main">
+                <button type="button" class="btn btn-success " data-bs-toggle="modal" data-bs-target="#exampleModal">Product graph <i class="fa fa-line-chart"></i></button>
+            </div>
+        <!--Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="#exampleModalLabel">
+            <div class="modal-dialog ">
+                <div class="modal-content bg-dark text-white">
+                    <div class="modal-header">
+                        <h4 class="modal-title">
+                            Customer Details
+                        </h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="graph main">
+                            <!-- https://codepen.io/jlalovi/details/bIyAr -->
+                            <div class="bar-chart-block block">
+                                <h2 class='titular'>cell of product <sup>100%</sup></h2>
+                                <div class='grafico bar-chart'>
+                                    <ul class='eje-y'>
+                                        <li data-ejeY='60'></li>
+                                        <li data-ejeY='45'></li>
+                                        <li data-ejeY='30'></li>
+                                        <li data-ejeY='15'></li>
+                                        <li data-ejeY='0'></li>
+                                    </ul>
+                                    <ul class='eje-x'>
+                                        <li data-ejeX='37'><i>Printer</i></li>
+                                        <li data-ejeX='56'><i>Routers</i></li>
+                                        <li data-ejeX='25'><i>Laptop</i></li>
+                                        <li data-ejeX='18'><i>Desktop</i></li>
+                                        <li data-ejeX='45'><i>Wi-fi</i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary " type="button" data-bs-dismiss="modal">Close</button>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
 
         </main>
     </div>
