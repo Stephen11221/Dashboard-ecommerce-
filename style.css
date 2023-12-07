@@ -150,9 +150,9 @@ form input{
     }
     .category>  div{
         font-size: 0.8rem;
-        width: 290px;
+        width: 250px;
         margin-top: 10px;
-        margin-left: 15px;
+        margin-left: 5px;
         border:  1px solid green;
     }
 }
